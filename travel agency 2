@@ -1,0 +1,4 @@
+select 
+avg(days_between_transaction_and_activity_date)
+from dsvirchevska.pmm_datset_for_final_exam_pmm_datset_for_final_exam
+where user_home_country = 'France'
