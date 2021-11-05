@@ -1,0 +1,7 @@
+SELECT avg(total_number_of_tickets_bought/total_number_of_transactions)
+as avg_bought_per_transaction,
+AVG(case when traveling_with_kids = 'yes' then total_number_of_tickets_bought/total_number_of_transactions end) 
+as avg_bought_per_transaction_with_kids, 
+AVG(case when traveling_with_kids = 'no' then total_number_of_tickets_bought/total_number_of_transactions end)
+as avg_bought_per_transaction_without_kids
+from dsvirchevska.pmm_datset_for_final_exam_pmm_datset_for_final_exam
