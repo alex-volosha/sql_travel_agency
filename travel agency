@@ -1,0 +1,7 @@
+select user_home_country,
+count(distinct user_id)
+from dsvirchevska.pmm_datset_for_final_exam_pmm_datset_for_final_exam
+where traveling_with_kids = 'yes'
+group by user_home_country
+order by count DESC
+limit 1
